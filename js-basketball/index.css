@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Timer;
+    src: url(../fonts/CursedTimerULiL.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(229, 229, 229);
+    font-size: 90px;
+    margin: 10px;
+}
+
+.score {
+    background-color: #080001;
+    color: #F94F6D;
+    font-family: Timer;
+    font-size: 180px;
+    /* max-width: fit-content; */
+    margin: 40px 0px;
+    padding: 30px 0px 0px 0px;
+}
+
+.score-button button,
+.reset-btn {
+    /* button { */
+    font-family: Timer;
+    color: #9AABD8;
+    background-color: #00000000;
+    border: 2px solid #9AABD8;
+    padding: 15px 20px 10px 20px;
+    margin: 0px 10px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.reset-btn {
+    margin-top: 35px;
+    margin-right: auto;
+    display: block;
+    margin-left: auto;
+}
