@@ -61,6 +61,10 @@ button {
     margin: auto;
 }
 
+#message {
+    color: #F94F6D;
+}
+
 
 /* nav */
 
@@ -175,3 +179,4 @@ label a {
     font-weight: normal;
     line-height: 1.6;
 }
+
