@@ -18,4 +18,6 @@ body {
     line-height: 1.6;
     background: #1B244A;
     overflow-x: hidden;
+    text-align: center;
+    padding-top: 200px;
 }
