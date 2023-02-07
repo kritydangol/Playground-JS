@@ -17,14 +17,18 @@
         </ul>
     </label>
     <div class="container">
-        <h1>Count:</h1>
-        <h2 id="count-el">0</h2>
+        <div class="count">
+            <h1>Count:</h1>
+            <h2 id="count-el">0</h2>
+        </div>
+        <div class="info">
+            <p id="save-el">Previous entries: </p>
+            <p>Total Count: <span id="total-el"></span></p>
+        </div>
         <button id="increment-btn" onclick="increment()">INCREMENT</button>
         <button id="save-btn" onclick="save()">SAVE</button>
-        <p id="message"></p>
-        <p id="save-el">Previous entries: </p>
-        <p>Total Count: <span id="total-el"></span></p>
     </div>
+    <p id="message"></p>
     <script src="index.js"></script>
 </body>
 
