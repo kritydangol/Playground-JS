@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@font-face {
+    font-family: Timer;
+    src: url(../fonts/CursedTimerULiL.ttf);
+}
+
 *,
 *:before,
 *:after {
@@ -20,4 +25,22 @@ body {
     overflow-x: hidden;
     text-align: center;
     padding-top: 200px;
+}
+
+
+button {
+    font-family: Timer;
+    color: #9aabd849;
+    background-color: #00000000;
+    border: 2px solid #9aabd849;
+    padding: 15px 20px 10px 20px;
+    margin: 0px 10px 10px 10px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+
 }
