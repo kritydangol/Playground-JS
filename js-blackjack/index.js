@@ -15,11 +15,12 @@ function getRandomCard() {
 // cardsEl.textContent
 function startGame() {
     isAlive = true;
+    hasBlackJack = false
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
     cards = [firstCard, secondCard]
     sum = firstCard + secondCard
-    
+
     renderGame()
 }
 
@@ -42,20 +43,26 @@ function renderGame() {
 }
 
 function newCard() {
-    if (isAlive && !hasBlackJack) {
-        let card = getRandomCard()
-        sum += card
-        // Push the card to the cards array
-        cards.push(card)
-        // console.log(cards)
-        renderGame()
-    }
-    else if (!isAlive) {
-        message = "You're out of the game, you can't take a new card anymore!"
+    if (sum === 0) {
+        message = "You should start the game before drawing a card."
         messageEl.textContent = message
     }
     else {
-        message = "You've got Blackjack already! You won! Congratulations!"
-        messageEl.textContent = message
+        if (isAlive && !hasBlackJack) {
+            let card = getRandomCard()
+            sum += card
+            // Push the card to the cards array
+            cards.push(card)
+            // console.log(cards)
+            renderGame()
+        }
+        else if (hasBlackJack) {
+            message = "You've got Blackjack already! You won! Congratulations!"
+            messageEl.textContent = message
+        }
+        else if (!isAlive) {
+            message = "You're out of the game, you can't take a new card anymore!"
+            messageEl.textContent = message
+        }
     }
 }
