@@ -45,7 +45,7 @@ if (age < 6) {
     console.log("student discount.")
 } else if (age < 66) {
     console.log("full price.")
-}else{
+} else {
     console.log("senior citizen discount.")
 }
 
@@ -67,3 +67,23 @@ console.log("The 5 largest countries in the world:")
 for (let i = 0; i < largeCountries.length; i++) {
     console.log("- " + largeCountries[i])
 }
+
+
+// 4
+//  PUSH, POP, SHIFT AND UNSHIFT
+let largeCountries1 = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+
+// You need to help me fixup the largeCountries array so that 
+// China and Pakistan are added back into their respective places
+
+// Use push() & pop() and their counterparts unshift() & shift()
+// Google how to use unshift() and shift()
+
+console.log(largeCountries1)
+// pop and push works at the end
+largeCountries1.pop()
+largeCountries1.push("Pakistan")
+// shift and unshift works at the beginning
+largeCountries1.shift()
+largeCountries1.unshift("China")
+console.log(largeCountries1)
