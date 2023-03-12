@@ -23,6 +23,7 @@ function logData() {
 logData()
 
 
+// _____________________________________________________________________
 // 2
 // IF ELSE
 
@@ -49,6 +50,8 @@ if (age < 6) {
     console.log("senior citizen discount.")
 }
 
+
+// _____________________________________________________________________
 // 3
 // FOR LOOP
 
@@ -69,8 +72,10 @@ for (let i = 0; i < largeCountries.length; i++) {
 }
 
 
+// _____________________________________________________________________
 // 4
 //  PUSH, POP, SHIFT AND UNSHIFT
+
 let largeCountries1 = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
 
 // You need to help me fixup the largeCountries array so that 
@@ -87,3 +92,36 @@ largeCountries1.push("Pakistan")
 largeCountries1.shift()
 largeCountries1.unshift("China")
 console.log(largeCountries1)
+
+
+// _____________________________________________________________________
+// 5
+// LOGICAL OPERATORS (&&, ||) 
+
+let dayOfMonth = 13
+let weekday = "Friday"
+
+// If it is Friday the 13th, log out this spooky face: 😱
+// Use the logical "AND operator" -> &&
+
+if (dayOfMonth === 13 && weekday === "Friday") {
+    console.log("😱")
+}
+else {
+    console.log("👍")
+}
+
+
+// _____________________________________________________________________
+// 6
+// ROCK PAPER SCISSORS | MATH
+
+let hands = ["rock", "paper", "scissor"]
+
+// Create a function that returns a random item from the array
+
+function getRandom() {
+    let randomIndex = Math.floor(Math.random() * 3)
+    return hands[randomIndex]
+}
+console.log(getRandom())
