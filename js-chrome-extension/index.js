@@ -23,3 +23,9 @@ function renderLeads() {
     }
     ulEl.innerHTML = listItems
 }
+
+
+// note: local storage use:
+// localStorage.setItem("key","value")
+// localStorage.getItem("key")
+// localStorage.clear()
