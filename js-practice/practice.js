@@ -172,3 +172,15 @@ function logItems(arr) {
 }
 
 arrayThing(myCourses)
+
+
+// _____________________________________________________________________
+// part 3 | 3
+// Save to localStorage
+
+// Save a value to localStorage
+// Delete your code and refresh the page
+// Fetch your value from localStorage and log it out
+localStorage.setItem("thing", "wow")
+console.log(localStorage.getItem("thing"))
+localStorage.clear()

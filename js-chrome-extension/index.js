@@ -19,7 +19,7 @@ tabBtn.addEventListener("click", function () {
     // fetching current tab from current window from chrome
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         myLeads.push(tabs[0].url)
-        localStorage.setItem("myLeads", JSON.stringify(myLeads))
+        localStorage.setItem("myLeads", JSON.stringify(myLea    ds))
         render(myLeads)
     })
 })
