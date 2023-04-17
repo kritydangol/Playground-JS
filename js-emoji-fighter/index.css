@@ -2,15 +2,8 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
-    /* background: linear-gradient(white, gray); */
     height: 100vh;
-    /* color: #1B244A; */
-
-}
-body {
     color: rgb(229, 229, 229);
-    /* color: #e0e4cc; */
     font-size: 1.2em;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
