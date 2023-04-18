@@ -244,3 +244,34 @@ function generateSentence(desc, arr) {
 
 generateSentence("best fruits", ["Apples", "Bananas"])
 generateSentence("largest countries", ["China", "India", "USA"])
+
+
+
+// _____________________________________________________________________
+// part 3 | 7
+// Round two decimal
+
+// Challenge:
+// Round the price in the button down to two decimal places.
+// Don't know which method to use? Google it!
+
+const totalPrice = 420.69235632455
+// const btn = document.getElementById("purchase-btn")
+// btn.textContent = `Buy €${ (totalPrice).toFixed(2) }`
+
+decimaled = `Buy €${ (totalPrice).toFixed(2) }`
+console.log(decimaled)
+
+
+
+// _____________________________________________________________________
+// part 3 | 8
+// str to num
+
+// Challenge:
+// The toFixed() method doesn't work anymore. Can you make it work?
+// Google the error message if you're unsure about how to do it
+
+const totalPrice1 = "420.69235632455"
+const btn = document.getElementById("buy-btn")
+btn.textContent = `Buy €${ Number(totalPrice1).toFixed(2) }`
